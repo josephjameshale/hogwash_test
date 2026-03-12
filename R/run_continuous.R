@@ -92,6 +92,7 @@ run_continuous <- function(args){
     prepare_phenotype(args$phenotype, args$discrete_or_continuous, args$tree)
   print(geno)
   print(geno$snps_per_gene)
+  print(corrected_pvals_all_trans$sig_pvals)
   trans_mat_results <-
     plot_continuous_results(disc_cont = "continuous",
                             tr = args$tree,
