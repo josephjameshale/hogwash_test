@@ -1151,6 +1151,7 @@ plot_continuous_results <- function(disc_cont,
   # Plot Genotype vs Tree Edge Heatmap
 
   cluster_col_log <- TRUE
+  print('using test version')
   if (is.null(snp_in_gene)){
     cluster_col_log <- FALSE
   }
