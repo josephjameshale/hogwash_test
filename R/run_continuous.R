@@ -90,6 +90,8 @@ run_continuous <- function(args){
   # SAVE AND PLOT RESULTS -----------------------------------------------------#
   phenotype_vector <-
     prepare_phenotype(args$phenotype, args$discrete_or_continuous, args$tree)
+  print(geno)
+  print(geno$snps_per_gene)
   trans_mat_results <-
     plot_continuous_results(disc_cont = "continuous",
                             tr = args$tree,
