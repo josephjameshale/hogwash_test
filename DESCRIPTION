@@ -1,4 +1,4 @@
-Package: hogwash
+Package: hogwash_test
 Type: Package
 Title: Three Bacterial Genome-Wide Association Study Methods
 Version: 1.2.6
