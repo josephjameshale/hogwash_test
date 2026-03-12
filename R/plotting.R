@@ -1151,7 +1151,10 @@ plot_continuous_results <- function(disc_cont,
   # Plot Genotype vs Tree Edge Heatmap
 
   cluster_col_log <- TRUE
-  if (nrow(snp_in_gene) == 1) {
+  if (is.null(snp_in_gene)){
+    cluster_col_log <- FALSE
+  }
+  else if (nrow(snp_in_gene) == 1) {
     # Avoid clustering issue if only one group in heatmap
     cluster_col_log <- FALSE
   }
